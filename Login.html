@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+         *{
+         background-color: aquamarine;
+         margin: 0;
+        
+     }
+     .a{
+         text-align: center;
+         color: red;
+         background-color: rgb(224, 241, 78);
+         margin: 0px;
+         padding: 20px;
+         
+     }
+     nav{
+         background-color: black;
+         padding: 20px;
+        
+     }
+     nav ul{
+         list-style: none;
+         display: flex;
+         text-align: center;
+         background-color: black;
+         margin: 0;
+     }
+     nav ul li a{
+         text-decoration: none;
+         margin: 50px;
+         background-color: black;
+         color: rgb(255, 255, 255);
+         
+
+     }
+     nav ul li{
+         text-align: center;
+         background-color: black;
+     }
+     ul a:hover{
+         font-size: 17px;
+         color: rgb(242, 147, 147);
+         
+     }
+     footer{
+            margin-top:250px;
+            margin-bottom:30px;
+            margin-left:25px;
+        }
+
+    .login{
+        margin: 44px;
+        
+    }
+    .pass{
+        margin-top: 24px;
+    }
+    .rb{
+        font-weight: bolder
+    }
+    .r1{
+        margin-left: 0px;
+        margin-top: 10px;
+        
+        
+    }
+    .rb{
+        margin-top: 24px;
+    }
+    P{
+        font-weight: BOLDER;
+       
+    }
+    .cb{
+        margin-top: 14px;
+        margin-left: 0;
+    }
+    </style>
+</head>
+<body>
+    <p><h1 class="a">Engineering Collage Dhundho</h1></p>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="Contact us.html">Contact us</a></li>
+                <li><a href="Login.html">Login</a></li>
+                
+        </nav>
+    </div>
+    <main>
+        <form class="login" action="#">
+            <fieldset>
+            <legend style="font-weight:bolder;">Login details </legend>
+            <h3>Enter your details</h3>
+            <input type="text" name="name" required><br>
+            <h3 class="pass">Enter password</h3>
+            <input type="password" name="password" required><br>
+            <h3 class="pass">Enter Email</h3>
+            <input type="email" name="email" required><br>
+            <p class="rb" required>Select your University <br>
+            <input class="r1" type="radio" name="univ" value="VTU" > VTU <br>
+            <input class="r1" type="radio" name="univ" value="Autnomos"> Autnomos <br>
+            <input class="r1" type="radio" name="univ" value="Deemed"> Deemed/Private
+        </p>
+        <p style="margin-top:24px;" required> Select your exam type <br>
+        <input class="cb" type="checkbox" name="exam" id="exam" > KCET <br>
+        <input class="cb" type="checkbox" name="exam" id="exam"> Comed K <br>
+        </p>
+    
+        <select class="cb" style="font-weight:bolder;" name="city" id="city" required>
+            <option value="0">Select your city</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Tumkur">Tumkur</option>
+            <option value="Mysuru">Mysuru</option>
+            <option value="Mangaluru">Mangaluru</option>
+            <option value="Hubballi-Dharwad">Hubballi-Dharwad</option>
+            <option value="Belagavi">Belagavi</option>
+            <option value="Shivamogga">Shivamogga</option>
+            <option value="Ballari">Ballari</option>
+            <option value="Udupi">Udupi</option>
+            <option value="Vijayapura">Vijayapura (Bijapur)</option>
+            <option value="Chikkamagaluru">Chikkamagaluru</option>
+        </select>
+        <fieldset>
+        <legend style="margin-top:20px; font-weight:bolder;">Upload your result</legend>
+        <input class="cb" type="file" name="result sheet" id="result"><br>
+        <input class="cb" type="submit" name="Upload">
+        </fieldset>
+
+        <input style="margin-top: 20px; color: rgb(0, 0, 0); padding: 20px; font-weight: bolder; font-size: 24px; font-family: 'Times New Roman', Times, serif;" type="submit" value="Submit">
+
+    </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2022 Engineering Collage Dhundho</p>
+    </footer>
+
+</body>
+</html>
